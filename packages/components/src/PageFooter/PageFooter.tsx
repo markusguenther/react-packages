@@ -128,9 +128,9 @@ export const PageFooter: React.FC<PageFooterProps> = ({
           <GridItem width={[1, 1, 1, 1 / 3]} mb={[2, 2, 2, 0]}>
             <SocialLinks>
               <SocialLink
-                href="https://www.facebook.com/t3nMagazin"
+                href="https://facebook.com/t3nMagazin"
                 title="Facebook"
-                mx={1}
+                mx={2}
               >
                 <SocialFacebook fill="white" />
               </SocialLink>
@@ -138,21 +138,21 @@ export const PageFooter: React.FC<PageFooterProps> = ({
                 <SocialTwitter fill="white" />
               </SocialLink>
               <SocialLink
-                href="https://www.xing.com/news/pages/t3n-magazin-67"
+                href="https://xing.com/news/pages/t3n-magazin-67"
                 title="Xing"
                 mx={2}
               >
                 <SocialXing fill="white" />
               </SocialLink>
               <SocialLink
-                href="https://www.linkedin.com/company/t3n-magazin-yeebase-media-gmbh/"
+                href="https://linkedin.com/company/t3n-magazin-yeebase-media-gmbh/"
                 title="LinkedIn"
                 mx={2}
               >
                 <SocialLinkedin fill="white" />
               </SocialLink>
               <SocialLink
-                href="https://www.instagram.com/t3n_magazin/"
+                href="https://instagram.com/t3n_magazin/"
                 title="Instagram"
                 mx={2}
               >
