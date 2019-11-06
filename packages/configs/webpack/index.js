@@ -13,7 +13,7 @@ module.exports = ({ title = '', dirname = '' }) => {
     entry: ['./src/index.ts'],
     output: {
       filename: 'bundle.js',
-      path: resolve(dirname || __dirname, './dist'),
+      path: resolve(dirname || __dirname, './dist/umd'),
       library: '',
       libraryTarget: 'umd',
       umdNamedDefine: true,

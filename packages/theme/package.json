@@ -6,13 +6,16 @@
     "url": "ssh://git@github.com/t3n/react-packages.git"
   },
   "description": "t3n theme configuration to use with @t3n/components",
-  "main": "dist/bundle.js",
+  "main": "dist/umd/bundle.js",
+  "module": "dist/esm/index.js",
   "types": "src/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist && rm -rf .awcache",
     "check-types": "tsc",
     "start": "webpack --watch",
-    "build": "NODE_ENV=production webpack",
+    "build": "npm run build:esm && npm run build:umd",
+    "build:esm": "rm -rf dist/esm && tsc -b tsconfig.esm.json",
+    "build:umd": "NODE_ENV=production webpack",
     "test": "jest",
     "test-watch": "jest --watch"
   },
